@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Gato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Juego del Gato</h1>
+        <div class="scoreboard">
+            <div class="score">
+                <span id="playerXWins">Tache (X): 0</span>
+            </div>
+            <div class="score">
+                <span id="playerOWins">Círculo (O): 0</span>
+            </div>
+        </div>
+        <div class="game-board-and-buttons">
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="buttons">
+                <button onclick="restartGame()" class="restart-btn">Reiniciar Juego</button>
+                <button onclick="resetScore()" class="reset-score-btn">Reiniciar Marcador</button>
+            </div>
+        </div>
+        <div id="message"></div>
+    </div>
+
+    <!-- Aviones volando -->
+    <div class="airplane" id="airplane1"></div>
+    <div class="airplane" id="airplane2"></div>
+    <div class="airplane" id="airplane3"></div>
+
+    <!-- Música de fondo (YouTube Embed) -->
+    <div class="audio-container">
+        <iframe id="audio" width="0" height="0" src="https://www.youtube.com/embed/0xccB-_nvqk?autoplay=1&loop=1&playlist=0xccB-_nvqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
